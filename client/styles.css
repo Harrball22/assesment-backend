@@ -21,3 +21,7 @@ form {
 	align-items: flex-start;
 	align-content: stretch;
 }
+
+button {
+    margin-top: 10px;
+}
