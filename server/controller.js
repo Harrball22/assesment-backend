@@ -42,5 +42,23 @@ module.exports = {
             }
         }
         res.status(200).send("Cannot remove fortune because it does not exist")
+    },
+    changeFortune: (req, res) => {
+        let {fortune} = req.params
+        let {fortuneToChangeTo} = req.body
+        console.log(fortuneToChangeTo)
+
+        for(i = 0; i < fortunes.length; i++){
+            if (fortunes[i] === fortune){
+                fortunes[i] = fortuneToChangeTo
+                res.status(200).send("Changed Fortune: " + fortune +  " \nTo: " + fortuneToChangeTo)
+                return
+            }
+        }
+        res.status(200).send("Cannot remove fortune because it does not exist")
+    },
+    deleteAllFortunes: (req, res) => {
+        fortunes = []
+        res.status(200).send("Deleted all fortunes")
     }
 }
