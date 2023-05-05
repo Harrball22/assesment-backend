@@ -1,0 +1,23 @@
+body {
+    padding: 30px;
+}
+
+/* section {
+    padding-top: 20px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+} */
+
+form {
+    padding-top: 20px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+}
